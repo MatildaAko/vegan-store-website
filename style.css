@@ -163,7 +163,8 @@ nav {
     transition-duration: 300ms;
 }
 
-.steps-columns:hover>i {
+.steps-columns:hover>i,
+.details-column i:hover {
     transform: scale(1.1);
 }
 
@@ -194,22 +195,102 @@ nav {
     height: 68vh;
 }
 
+.camera {
+    grid-area: camera;
+}
+
+.rocket {
+    grid-area: rocket;
+}
+
+.twitter {
+    grid-area: twitter;
+}
+
+.weixin {
+    grid-area: weixin;
+}
+
 #store-section {
     background-color: #f7eee2;
     width: 100vw;
     height: 100vh;
     margin: auto;
+}
+
+.details-column-wrapper {
     display: grid;
+    grid-column: auto auto auto auto;
+    grid-template-areas: "heading heading heading heading" "camera rocket twitter weixin";
+    margin: auto;
+    width: 80%;
+}
+
+.details-column {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 45px;
 }
 
 #heading {
     text-align: center;
+    grid-area: heading;
+    padding-top: 75px;
 }
 
-#heading h3 {
+.green-text {
     color: #91ac41;
     font-size: 24px;
     font-family: 'Caveat', cursive;
     margin: 0;
     margin-top: 35px;
+}
+
+.heading-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.steps-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.description {
+    font-family: 'Poppins';
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.details-column i {
+    font-size: 60px;
+    background: #e3b375;
+    border-radius: 50%;
+    padding: 40px;
+    color: white;
+    margin: 40px 0 15px 0;
+    transition: 1s ease-out;
+    transition-duration: 300ms;
+}
+
+.details-column h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.details-column p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+    padding: 25px;
+    width: 85%;
+    margin: auto;
 }
