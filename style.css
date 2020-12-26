@@ -86,7 +86,6 @@
         
         #buy-now a {
             font-size: 12px;
-            font-weight: 500;
             color: white;
         }
         
@@ -98,6 +97,7 @@
         #submit {
             background-color: rgb(170, 210, 54);
             border-radius: 4px;
+            font-weight: 600;
             border: 0;
             text-transform: uppercase;
             cursor: pointer;
@@ -105,7 +105,6 @@
         
         #submit {
             font-size: 16px;
-            font-weight: 600;
             color: white;
             padding: 12px 34px;
         }
@@ -177,7 +176,7 @@
         }
         
         .steps-columns:hover>i,
-        .details-column i:hover {
+        .details-column:hover>i {
             transform: scale(1.1);
         }
         
@@ -476,10 +475,6 @@
         iframe {
             margin: auto;
             margin-top: -20px;
-        }
-        
-        iframe:hover {
-            di
         }
         
         #video-section {
