@@ -12,23 +12,24 @@
 </head>
 
 <body>
-    <header>
-        <nav id="nav">
-            <div><img id="logo" src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg"></div>
+    <header id="header">
+        <nav id="nav-bar">
+            <div><img id="header-img" src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg">
+            </div>
             <div id="menu">
                 <div id="demo">
-                    <a href="#">Demo Pages<i class="fas fa-caret-down"></i></a>
+                    <a href="#">Menu<i class="fas fa-caret-down"></i></a>
                     <div id="dropdown">
-                        <a class="items" href="#">Menu Item 1</a>
+                        <a class="nav-link" href="#steps-section">Steps</a>
                         <hr>
-                        <a class="items" href="#">Menu Item 1</a>
+                        <a class="nav-link" href="#review-section">Reviews</a>
                         <hr>
-                        <a class="items" href="#">Menu Item 1</a>
+                        <a class="nav-link" href="#follow-section">Follow Us</a>
 
                     </div>
                 </div>
                 <a href="#video">Watch Video</a>
-                <a href="#">Blocks<i class="fas fa-caret-down"></i></a>
+                <a href="#contact-section">Contact Us</a>
                 <button id="buy-now"><a href="#">Buy Now</a></button>
             </div>
         </nav>
@@ -36,7 +37,7 @@
     <main>
         <section id="start-section">
             <div id="intro-text">
-                <h1>Vegan Store Simple Website Template</h1>
+                <h1>Vegan Store</h1>
                 <p>With nutrition, all the vital functions of the body are connected. It is the source of the development of tissues and cells, their constant renewal, the saturation of man with energy.</p>
             </div>
         </section>
@@ -164,7 +165,8 @@
                 <div id="address">
                     <p class="green-text">Contact Us</p>
                     <h1>Address Information</h1>
-                    <p class="contact-text">Overeating is one of the most common causes of overweight and digestive problems.</p>
+                    <p class="contact-text">Overeating is one of the most common causes of overweight and digestive problems.
+                    </p>
                     <h2>London Store</h2>
                     <pre><p>Roeterseiland Campus Building E
 6th floor London
@@ -174,17 +176,18 @@ examplemail.mail.com</p></pre>
                     <pre><p>Roeterseiland Campus Building E
 6th floor London
 Monday to Friday : 9am to 8pm
-examplemail.mail.com</p></pre></div>
+examplemail.mail.com</p></pre>
+                </div>
 
                 <div id="contact">
                     <p class="green-text">Meet our Team</p>
                     <h1>Get In Touch</h1>
                     <p class="contact-text">The task of proper nutrition - to remove from the diet harmful food and enrich it useful.</p>
-                    <form id="contact-form">
+                    <form id="form" method="post" action="https://www.freecodecamp.org/email-submit">
                         <input class="form-items" type="text" name="name" placeholder="Name"><br>
                         <input class="form-items" type="tel" name="telephone" placeholder="Phone"><br>
                         <input class="form-items" type="text" name="subject" placeholder="Subject"><br>
-                        <input class="form-items" type="email" name="email" placeholder="Email"><br>
+                        <input class="form-items" id="email" type="email" name="email" placeholder="Email" required><br>
                         <textarea class="form-items" name="message" cols="30" rows="2" placeholder="Message"></textarea>
                         <input id="submit" type="submit" name="submit" value="Submit Now">
                     </form>
@@ -195,6 +198,8 @@ examplemail.mail.com</p></pre></div>
     <footer>
         <p class="footer">&copy; Copyright 2018 Mobirise - All Rights Reserved</p>
     </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 
 </html>

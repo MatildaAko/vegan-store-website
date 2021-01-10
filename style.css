@@ -13,7 +13,7 @@ h1 {
     font-size: 44px;
 }
 
-header {
+#header {
     height: 70px;
     align-items: center;
     position: fixed;
@@ -22,7 +22,7 @@ header {
     left: 0px;
 }
 
-nav {
+#nav-bar {
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,7 @@ nav {
     padding: 16px 40px 16px 20px;
 }
 
-#logo {
+#header-img {
     width: 40px;
     height: 40px;
 }
@@ -75,7 +75,7 @@ nav {
     display: none;
 }
 
-#menu .items {
+#menu .nav-link {
     font-weight: 300;
     display: block;
     text-align: left;
@@ -536,7 +536,7 @@ pre {
     line-height: 1.6;
 }
 
-#contact-form .form-items {
+#form .form-items {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     padding: 15px;
@@ -554,6 +554,55 @@ pre {
     font-size: 14px;
     letter-spacing: 0.5px;
     position: sticky;
+}
+
+@media only screen and (max-width: 1268px) {
+    #start-section {
+        display: block;
+    }
+    #intro-text {
+        padding: 0;
+        width: 90%;
+    }
+    #steps-section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #store-section {
+        height: auto;
+    }
+    .details-column-wrapper {
+        grid-column: auto auto;
+        grid-template-areas: "camera rocket" "twitter weixin";
+    }
+    .details-column {
+        display: block;
+    }
+    .review-column-wrapper {
+        width: 100%;
+    }
+    #follow-section {
+        width: 100%;
+    }
+    #follow-form {
+        width: 30%;
+        padding: 20px;
+    }
+    #form-text {
+        margin: 20px;
+    }
+    #follow-form input[type=email] {
+        margin-top: 100px;
+    }
+    iframe {
+        width: 100%;
+    }
+    #contact-section {
+        height: auto;
+    }
+    #contact-section div {
+        width: 90%;
+        margin: 30px auto;
+    }
 }
 
 @media only screen and (max-width: 768px) {
